@@ -1,0 +1,14 @@
+h1 {
+    font: italic;
+    size: 20px;
+    text-align: center;
+}
+
+p{ font-family: "Charlemagne Std";
+    color: red;
+
+}
+
+body{
+    background: antiquewhite;
+}

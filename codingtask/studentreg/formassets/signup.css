@@ -1,0 +1,19 @@
+
+body{
+    margin: 0;
+    height: 100%;
+    padding: 20px;
+    display: grid;
+    place-content: center;
+}
+form{
+    background: #0dcaf0;
+    width: 300px;
+}
+
+.button{
+    height: auto;
+    width: auto;
+    border-radius: 5px;
+    alignment: center;
+}

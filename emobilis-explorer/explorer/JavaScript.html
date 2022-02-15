@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <style>
+
+    #JavaS{
+      padding-top:3px ;
+      padding-bottom: 3px;
+      text-align: center;
+      font-family: "MS Reference Sans Serif"; font-size: 20px; color: green; background-color: whitesmoke;
+    }
+
+    #Scrip{
+      padding-top:3px ;
+      padding-bottom: 3px;
+      text-align: center;
+      font-family: "Microsoft New Tai Lue"; font-size: 25px;
+    }
+
+    #OnC{
+      background-color: dimgrey;
+      font-family: "Microsoft New Tai Lue";
+      color: whitesmoke;
+      text-align: center;
+    }
+
+    #Bu{
+      background-color: red;
+    }
+
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML JavaScript Class</title>
+</head>
+<body>
+
+<p id="JavaS">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur, consectetur corporis ea earum eius hic impedit laboriosam magni natus officiis optio quis quod,
+  quos reprehenderit sequi sint soluta tempora? </p>
+
+<p id="OnC">
+  <button id="Bu" type="button" onclick="document.getElementById('JavaS').innerHTML=Date()">Click To Reveal Today's Date </button>
+
+</p>
+
+<p id="Scrip"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam at expedita illum ipsam laboriosam nemo odio reprehenderit tenetur voluptates. Ad at deserunt eos eveniet iste, nulla perferendis repellat temporibus.
+
+  <script id="OnC">
+
+document.getElementById('Scrip').innerHTML="Stop existing, Start living.";
+
+  </script>
+
+</p>
+
+</body>
+</html>
