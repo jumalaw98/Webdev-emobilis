@@ -24,7 +24,7 @@
                 <li class="nav-item stylenav ">
                     <a aria-current="page" class="nav-link active" href="#">
                         <i class="fa fa-chrome fa-3x text-white "></i>
-                        <span class="h4 text-white">CHROMIUM ADMIN  </span>
+                        <span class="h4 text-white">JUma Law98</span>
                     </a>
                 </li>
                 <hr>

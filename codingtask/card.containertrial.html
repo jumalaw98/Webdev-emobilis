@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        --primary: #0642cd;
+        --secondary: #fff;
+        --success: #10c277;
+        --info: #f0f4fe;
+        --warning: #ffd973;
+        --danger: #f01e1e;
+        --light: #f8f8f8;
+        --dark: #424242;
+        --100: #f8f8f8;
+        --200: #e8e8e8;
+        --300: #d3d3d3;
+        --400: #b6b6b6;
+        --500: #9b9b9b;
+        --600: #7d7d7d;
+        --700: #5f5f5f;
+        --800: #424242;
+        --900: #212121;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 320px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 1200px;
+        --breakpoint-xl: 1600px;
+        --font-family-sans-serif: "Poppins",sans-serif;
+        --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+        font-family: "Poppins",sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.6;
+        color: #212121;
+        word-wrap: break-word;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        flex: 1 1 auto;
+        position: relative;
+        text-align: left;
+        padding: 0!important;
+    </style>
+</head>
+<body>
+<div class="card-body">
+
+    <h5 id="instance-77406-header" class="card-title">Course overview</h5>
+
+
+    <div class="card-text content mt-3">
+        <div id="block-myoverview-620fb1a552563620fb1a515ca86" class="block-myoverview block-cards" data-region="myoverview" role="navigation" data-init="true">
+
+            <div data-region="filter" class="d-flex align-items-center flex-wrap mb-2" aria-label="Course overview controls">
+
+                <div class="nav-tabs-container w-100 m-b-1 mr-auto">
+                    <ul class="nav nav-tabs role=" tablist"="">
+                    <li class="nav-item">
+                        <a data-toggle="tab" role="tab" class="nav-link  active" href="#" data-filter="grouping" data-value="all" data-pref="all" aria-label="Show all courses except courses removed from view" aria-controls="courses-view-620fb1a552563620fb1a515ca86">
+                            All (except removed from view)
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="tab" role="tab" class="nav-link  " href="#" data-filter="grouping" data-value="inprogress" data-pref="inprogress" aria-label="Show courses in progress" aria-controls="courses-view-620fb1a552563620fb1a515ca86">
+                            In progress
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="tab" role="tab" class="nav-link  " href="#" data-filter="grouping" data-value="future" data-pref="future" aria-label="Show future courses" aria-controls="courses-view-620fb1a552563620fb1a515ca86">
+                            Future
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="tab" role="tab" class="nav-link  " href="#" data-filter="grouping" data-value="past" data-pref="past" aria-label="Show past courses" aria-controls="courses-view-620fb1a552563620fb1a515ca86">
+                            Past
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="tab" role="tab" class="nav-link  " href="#" data-filter="grouping" data-value="favourites" data-pref="favourites" aria-label="Show starred courses" aria-controls="courses-view-620fb1a552563620fb1a515ca86">
+                            Starred
+                        </a>
+                    </li><li class="nav-item">
+                    <a data-toggle="tab" role="tab" class="nav-link  " href="#" data-filter="grouping" data-value="hidden" data-pref="hidden" aria-label="Show courses removed from view" aria-controls="courses-view-620fb1a552563620fb1a515ca86">
+                        Removed from view
+                    </a>
+                </li>
+
+
+
+
+                    </ul>
+                </div>
+
+
+                <div class="mb-1 mr-1 d-flex align-items-center">
+                    <div class="dropdown">
+                        <button id="sortingdropdown" type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Sorting drop-down menu">
+                            <i class="icon fas fa-sort-amount-up-alt fa-fw " aria-hidden="true" aria-label=""></i>
+                            <span class="d-sm-inline-block" data-active-item-text="">
+                                Course name
+
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu" data-show-active-item="" aria-labelledby="sortingdropdown">
+                            <li>
+                                <a class="dropdown-item active" href="#" data-filter="sort" data-pref="title" data-value="fullname" aria-label="Sort courses by course name" aria-controls="courses-view-620fb1a552563620fb1a515ca86">
+                                    Course name
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item " href="#" data-filter="sort" data-pref="lastaccessed" data-value="ul.timeaccess desc" aria-label="Sort courses by last accessed date" aria-controls="courses-view-620fb1a552563620fb1a515ca86">
+                                    Last accessed
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown mb-1 d-flex ml-auto">
+                    <button id="displaydropdown" type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Display drop-down menu">
+                        <i class="icon fas fa-th fa-fw " aria-hidden="true" aria-label=""></i>
+                        <span class="d-sm-inline-block" data-active-item-text="">
+                                Card
+
+
+                            </span>
+                    </button>
+                    <ul class="dropdown-menu" data-show-active-item="" aria-labelledby="displaydropdown">
+                        <li>
+                            <a class="dropdown-item active" href="#" data-display-option="display" data-value="card" data-pref="card" aria-label="Switch to card view" aria-controls="courses-view-620fb1a552563620fb1a515ca86">
+                                Card
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item " href="#" data-display-option="display" data-value="list" data-pref="list" aria-label="Switch to list view" aria-controls="courses-view-620fb1a552563620fb1a515ca86">
+                                List
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item " href="#" data-display-option="display" data-value="summary" data-pref="summary" aria-label="Switch to summary view" aria-controls="courses-view-620fb1a552563620fb1a515ca86">
+                                Summary
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container-fluid p-0">
+                <div id="courses-view-620fb1a552563620fb1a515ca86" data-region="courses-view" data-display="card" data-grouping="all" data-customfieldname="" data-customfieldvalue="" data-sort="fullname" data-prev-display="card" data-paging="0" data-nocoursesimg="https://classes.kisumupoly.ac.ke/theme/image.php/space/block_myoverview/1620888003/courses" data-totalcoursecount="6" data-displaycategories="on"><div id="paged-content-container-1" data-region="paged-content-container">
+
+
+                    <div id="page-container-1" data-region="page-container" class="paged-content-page-container" aria-live="polite" style="">
+                        <div data-region="paged-content-page" data-page="1" class="">
+                            <div class="card-deck dashboard-card-deck " data-region="card-deck" role="list">
+
+
+                                <div class="card dashboard-card" role="listitem" data-region="course-content" data-course-id="3046">
+
+                                    <div class="c-course-box">
+                                        <div class="c-course-content">
+                                            <a href="https://classes.kisumupoly.ac.ke/course/view.php?id=3046" tabindex="-1">
+                                                <div class="card-img dashboard-card-img" style="background-image: url(&quot;https://classes.kisumupoly.ac.ke/pluginfile.php/102735/course/overviewfiles/comm skills.jpg&quot;);">
+                                                    <span class="sr-only">Course image</span>
+                                                </div>
+                                            </a>
+                                            <div class="course-info-container" id="course-info-container-3046-8">
+                                                <div class="d-flex align-items-start">
+                                                    <div class="w-100">
+                                                        <div class="text-muted muted d-flex w-100 my-1 flex-wrap small">
+                                                        </div>
+                                                        <a href="https://classes.kisumupoly.ac.ke/course/view.php?id=3046" class="coursename mt-3 mb-0">
+
+
+                            <span id="favorite-icon-3046-8" data-region="favourite-icon" data-course-id="3046">
+                                <span class="text-primary hidden" data-region="is-favourite" aria-hidden="true">
+                                    <i class="icon fas fa-star fa-fw " aria-hidden="true" title="Starred course" aria-label="Starred course"></i>
+                                    <span class="sr-only">Course is starred</span>
+                                </span>
+                            </span>
+                                                            <span class="sr-only">
+                                    Course name
+                                </span>
+
+
+                                                            <span class="multiline">
+            COMMUNICATION SKILLS 2022
+        </span>
+                                                        </a>
+                                                    </div>
+
+
+
+                                                    <div class="dropdown dropdown-right">
+                                                        <button class="btn btn-secondary btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="icon fas fa-ellipsis-v fa-fw " aria-hidden="true" aria-label=""></i>
+                                                            <span class="sr-only">
+                        Actions for current course COMMUNICATION SKILLS 2022
+                    </span>
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item " href="#" data-action="add-favourite" data-course-id="3046" aria-controls="favorite-icon-3046-8">
+                                                                Star this course
+                                                                <div class="sr-only">
+                                                                    Star for COMMUNICATION SKILLS 2022
+                                                                </div>
+                                                            </a>
+                                                            <a class="dropdown-item hidden" href="#" data-action="remove-favourite" data-course-id="3046" aria-controls="favorite-icon-3046-8">
+                                                                Unstar this course
+                                                                <div class="sr-only">
+                                                                    Remove star for COMMUNICATION SKILLS 2022
+                                                                </div>
+                                                            </a>
+                                                            <a class="dropdown-item hidden" href="#" data-action="show-course" data-course-id="3046" aria-controls="favorite-icon-3046-8">
+                                                                Restore to view
+                                                                <div class="sr-only">
+                                                                    Restore COMMUNICATION SKILLS 2022 to view
+                                                                </div>
+                                                            </a>
+                                                            <a class="dropdown-item " href="#" data-action="hide-course" data-course-id="3046" aria-controls="favorite-icon-3046-8">
+                                                                Remove from view
+                                                                <div class="sr-only">
+                                                                    Remove COMMUNICATION SKILLS 2022 from view
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                            <div class="progress mt-2">
+                                                <div class="progress-bar bar" role="progressbar" aria-valuenow="0" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress-bar-text small">
+                                                <span class="sr-only">Course progress:</span>
+                                                <strong>0</strong>% complete
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="card dashboard-card" role="listitem" data-region="course-content" data-course-id="3050">
+
+                                    <div class="c-course-box">
+                                        <div class="c-course-content">
+                                            <a href="https://classes.kisumupoly.ac.ke/course/view.php?id=3050" tabindex="-1">
+                                                <div class="card-img dashboard-card-img" style="background-image: url(&quot;https://classes.kisumupoly.ac.ke/pluginfile.php/103186/course/overviewfiles/ENTREP BUSS.jpg&quot;);">
+                                                    <span class="sr-only">Course image</span>
+                                                </div>
+                                            </a>
+                                            <div class="course-info-container" id="course-info-container-3050-8">
+                                                <div class="d-flex align-items-start">
+                                                    <div class="w-100">
+                                                        <div class="text-muted muted d-flex w-100 my-1 flex-wrap small">
+                                                        </div>
+                                                        <a href="https://classes.kisumupoly.ac.ke/course/view.php?id=3050" class="coursename mt-3 mb-0">
+
+
+                            <span id="favorite-icon-3050-8" data-region="favourite-icon" data-course-id="3050">
+                                <span class="text-primary hidden" data-region="is-favourite" aria-hidden="true">
+                                    <i class="icon fas fa-star fa-fw " aria-hidden="true" title="Starred course" aria-label="Starred course"></i>
+                                    <span class="sr-only">Course is starred</span>
+                                </span>
+                            </span>
+                                                            <span class="sr-only">
+                                    Course name
+                                </span>
+
+
+                                                            <span class="multiline">
+            ENTREPRENEURSHIP BUSS 2022
+        </span>
+                                                        </a>
+                                                    </div>
+
+
+
+                                                    <div class="dropdown dropdown-right">
+                                                        <button class="btn btn-secondary btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="icon fas fa-ellipsis-v fa-fw " aria-hidden="true" aria-label=""></i>
+                                                            <span class="sr-only">
+                        Actions for current course ENTREPRENEURSHIP BUSS 2022
+                    </span>
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item " href="#" data-action="add-favourite" data-course-id="3050" aria-controls="favorite-icon-3050-8">
+                                                                Star this course
+                                                                <div class="sr-only">
+                                                                    Star for ENTREPRENEURSHIP BUSS 2022
+                                                                </div>
+                                                            </a>
+                                                            <a class="dropdown-item hidden" href="#" data-action="remove-favourite" data-course-id="3050" aria-controls="favorite-icon-3050-8">
+                                                                Unstar this course
+                                                                <div class="sr-only">
+                                                                    Remove star for ENTREPRENEURSHIP BUSS 2022
+                                                                </div>
+                                                            </a>
+                                                            <a class="dropdown-item hidden" href="#" data-action="show-course" data-course-id="3050" aria-controls="favorite-icon-3050-8">
+                                                                Restore to view
+                                                                <div class="sr-only">
+                                                                    Restore ENTREPRENEURSHIP BUSS 2022 to view
+                                                                </div>
+                                                            </a>
+                                                            <a class="dropdown-item " href="#" data-action="hide-course" data-course-id="3050" aria-controls="favorite-icon-3050-8">
+                                                                Remove from view
+                                                                <div class="sr-only">
+                                                                    Remove ENTREPRENEURSHIP BUSS 2022 from view
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                            <div class="progress mt-2">
+                                                <div class="progress-bar bar" role="progressbar" aria-valuenow="0" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress-bar-text small">
+                                                <span class="sr-only">Course progress:</span>
+                                                <strong>0</strong>% complete
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="card dashboard-card" role="listitem" data-region="course-content" data-course-id="3049">
+
+                                    <div class="c-course-box">
+                                        <div class="c-course-content">
+                                            <a href="https://classes.kisumupoly.ac.ke/course/view.php?id=3049" tabindex="-1">
+                                                <div class="card-img dashboard-card-img" style="background-image: url(&quot;https://classes.kisumupoly.ac.ke/pluginfile.php/103172/course/overviewfiles/ENTREP TECH.jpg&quot;);">
+                                                    <span class="sr-only">Course image</span>
+                                                </div>
+                                            </a>
+                                            <div class="course-info-container" id="course-info-container-3049-8">
+                                                <div class="d-flex align-items-start">
+                                                    <div class="w-100">
+                                                        <div class="text-muted muted d-flex w-100 my-1 flex-wrap small">
+                                                        </div>
+                                                        <a href="https://classes.kisumupoly.ac.ke/course/view.php?id=3049" class="coursename mt-3 mb-0">
+
+
+                            <span id="favorite-icon-3049-8" data-region="favourite-icon" data-course-id="3049">
+                                <span class="text-primary hidden" data-region="is-favourite" aria-hidden="true">
+                                    <i class="icon fas fa-star fa-fw " aria-hidden="true" title="Starred course" aria-label="Starred course"></i>
+                                    <span class="sr-only">Course is starred</span>
+                                </span>
+                            </span>
+                                                            <span class="sr-only">
+                                    Course name
+                                </span>
+
+
+                                                            <span class="multiline">
+            ENTREPRENEURSHIP TECH 2022
+        </span>
+                                                        </a>
+                                                    </div>
+
+
+
+                                                    <div class="dropdown dropdown-right">
+                                                        <button class="btn btn-secondary btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="icon fas fa-ellipsis-v fa-fw " aria-hidden="true" aria-label=""></i>
+                                                            <span class="sr-only">
+                        Actions for current course ENTREPRENEURSHIP TECH 2022
+                    </span>
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item " href="#" data-action="add-favourite" data-course-id="3049" aria-controls="favorite-icon-3049-8">
+                                                                Star this course
+                                                                <div class="sr-only">
+                                                                    Star for ENTREPRENEURSHIP TECH 2022
+                                                                </div>
+                                                            </a>
+                                                            <a class="dropdown-item hidden" href="#" data-action="remove-favourite" data-course-id="3049" aria-controls="favorite-icon-3049-8">
+                                                                Unstar this course
+                                                                <div class="sr-only">
+                                                                    Remove star for ENTREPRENEURSHIP TECH 2022
+                                                                </div>
+                                                            </a>
+                                                            <a class="dropdown-item hidden" href="#" data-action="show-course" data-course-id="3049" aria-controls="favorite-icon-3049-8">
+                                                                Restore to view
+                                                                <div class="sr-only">
+                                                                    Restore ENTREPRENEURSHIP TECH 2022 to view
+                                                                </div>
+                                                            </a>
+                                                            <a class="dropdown-item " href="#" data-action="hide-course" data-course-id="3049" aria-controls="favorite-icon-3049-8">
+                                                                Remove from view
+                                                                <div class="sr-only">
+                                                                    Remove ENTREPRENEURSHIP TECH 2022 from view
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                            <div class="progress mt-2">
+                                                <div class="progress-bar bar" role="progressbar" aria-valuenow="16" style="width: 16%" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress-bar-text small">
+                                                <span class="sr-only">Course progress:</span>
+                                                <strong>16</strong>% complete
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="card dashboard-card" role="listitem" data-region="course-content" data-course-id="3048">
+
+                                    <div class="c-course-box">
+                                        <div class="c-course-content">
+                                            <a href="https://classes.kisumupoly.ac.ke/course/view.php?id=3048" tabindex="-1">
+                                                <div class="card-img dashboard-card-img" style="background-image: url(&quot;https://classes.kisumupoly.ac.ke/pluginfile.php/103138/course/overviewfiles/ENTREP TEP.jpg&quot;);">
+                                                    <span class="sr-only">Course image</span>
+                                                </div>
+                                            </a>
+                                            <div class="course-info-container" id="course-info-container-3048-8">
+                                                <div class="d-flex align-items-start">
+                                                    <div class="w-100">
+                                                        <div class="text-muted muted d-flex w-100 my-1 flex-wrap small">
+                                                        </div>
+                                                        <a href="https://classes.kisumupoly.ac.ke/course/view.php?id=3048" class="coursename mt-3 mb-0">
+
+
+                            <span id="favorite-icon-3048-8" data-region="favourite-icon" data-course-id="3048">
+                                <span class="text-primary hidden" data-region="is-favourite" aria-hidden="true">
+                                    <i class="icon fas fa-star fa-fw " aria-hidden="true" title="Starred course" aria-label="Starred course"></i>
+                                    <span class="sr-only">Course is starred</span>
+                                </span>
+                            </span>
+                                                            <span class="sr-only">
+                                    Course name
+                                </span>
+
+
+                                                            <span class="multiline">
+            ENTREPRENEURSHIP TEP 2022
+        </span>
+                                                        </a>
+                                                    </div>
+
+
+
+                                                    <div class="dropdown dropdown-right">
+                                                        <button class="btn btn-secondary btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="icon fas fa-ellipsis-v fa-fw " aria-hidden="true" aria-label=""></i>
+                                                            <span class="sr-only">
+                        Actions for current course ENTREPRENEURSHIP TEP 2022
+                    </span>
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item " href="#" data-action="add-favourite" data-course-id="3048" aria-controls="favorite-icon-3048-8">
+                                                                Star this course
+                                                                <div class="sr-only">
+                                                                    Star for ENTREPRENEURSHIP TEP 2022
+                                                                </div>
+                                                            </a>
+                                                            <a class="dropdown-item hidden" href="#" data-action="remove-favourite" data-course-id="3048" aria-controls="favorite-icon-3048-8">
+                                                                Unstar this course
+                                                                <div class="sr-only">
+                                                                    Remove star for ENTREPRENEURSHIP TEP 2022
+                                                                </div>
+                                                            </a>
+                                                            <a class="dropdown-item hidden" href="#" data-action="show-course" data-course-id="3048" aria-controls="favorite-icon-3048-8">
+                                                                Restore to view
+                                                                <div class="sr-only">
+                                                                    Restore ENTREPRENEURSHIP TEP 2022 to view
+                                                                </div>
+                                                            </a>
+                                                            <a class="dropdown-item " href="#" data-action="hide-course" data-course-id="3048" aria-controls="favorite-icon-3048-8">
+                                                                Remove from view
+                                                                <div class="sr-only">
+                                                                    Remove ENTREPRENEURSHIP TEP 2022 from view
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                            <div class="progress mt-2">
+                                                <div class="progress-bar bar" role="progressbar" aria-valuenow="0" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress-bar-text small">
+                                                <span class="sr-only">Course progress:</span>
+                                                <strong>0</strong>% complete
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="card dashboard-card" role="listitem" data-region="course-content" data-course-id="3047">
+
+                                    <div class="c-course-box">
+                                        <div class="c-course-content">
+                                            <a href="https://classes.kisumupoly.ac.ke/course/view.php?id=3047" tabindex="-1">
+                                                <div class="card-img dashboard-card-img" style="background-image: url(&quot;https://classes.kisumupoly.ac.ke/pluginfile.php/102750/course/overviewfiles/life skills.png&quot;);">
+                                                    <span class="sr-only">Course image</span>
+                                                </div>
+                                            </a>
+                                            <div class="course-info-container" id="course-info-container-3047-8">
+                                                <div class="d-flex align-items-start">
+                                                    <div class="w-100">
+                                                        <div class="text-muted muted d-flex w-100 my-1 flex-wrap small">
+                                                        </div>
+                                                        <a href="https://classes.kisumupoly.ac.ke/course/view.php?id=3047" class="coursename mt-3 mb-0">
+
+
+                            <span id="favorite-icon-3047-8" data-region="favourite-icon" data-course-id="3047">
+                                <span class="text-primary hidden" data-region="is-favourite" aria-hidden="true">
+                                    <i class="icon fas fa-star fa-fw " aria-hidden="true" title="Starred course" aria-label="Starred course"></i>
+                                    <span class="sr-only">Course is starred</span>
+                                </span>
+                            </span>
+                                                            <span class="sr-only">
+                                    Course name
+                                </span>
+
+
+                                                            <span class="multiline">
+            LIFE SKILLS 2022
+        </span>
+                                                        </a>
+                                                    </div>
+
+
+
+                                                    <div class="dropdown dropdown-right">
+                                                        <button class="btn btn-secondary btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="icon fas fa-ellipsis-v fa-fw " aria-hidden="true" aria-label=""></i>
+                                                            <span class="sr-only">
+                        Actions for current course LIFE SKILLS 2022
+                    </span>
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item " href="#" data-action="add-favourite" data-course-id="3047" aria-controls="favorite-icon-3047-8">
+                                                                Star this course
+                                                                <div class="sr-only">
+                                                                    Star for LIFE SKILLS 2022
+                                                                </div>
+                                                            </a>
+                                                            <a class="dropdown-item hidden" href="#" data-action="remove-favourite" data-course-id="3047" aria-controls="favorite-icon-3047-8">
+                                                                Unstar this course
+                                                                <div class="sr-only">
+                                                                    Remove star for LIFE SKILLS 2022
+                                                                </div>
+                                                            </a>
+                                                            <a class="dropdown-item hidden" href="#" data-action="show-course" data-course-id="3047" aria-controls="favorite-icon-3047-8">
+                                                                Restore to view
+                                                                <div class="sr-only">
+                                                                    Restore LIFE SKILLS 2022 to view
+                                                                </div>
+                                                            </a>
+                                                            <a class="dropdown-item " href="#" data-action="hide-course" data-course-id="3047" aria-controls="favorite-icon-3047-8">
+                                                                Remove from view
+                                                                <div class="sr-only">
+                                                                    Remove LIFE SKILLS 2022 from view
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                            <div class="progress mt-2">
+                                                <div class="progress-bar bar" role="progressbar" aria-valuenow="0" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress-bar-text small">
+                                                <span class="sr-only">Course progress:</span>
+                                                <strong>0</strong>% complete
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="card dashboard-card" role="listitem" data-region="course-content" data-course-id="3045">
+
+                                    <div class="c-course-box">
+                                        <div class="c-course-content">
+                                            <a href="https://classes.kisumupoly.ac.ke/course/view.php?id=3045" tabindex="-1">
+                                                <div class="card-img dashboard-card-img" style="background-image: url(&quot;https://classes.kisumupoly.ac.ke/pluginfile.php/102589/course/overviewfiles/research methods.jpg&quot;);">
+                                                    <span class="sr-only">Course image</span>
+                                                </div>
+                                            </a>
+                                            <div class="course-info-container" id="course-info-container-3045-8">
+                                                <div class="d-flex align-items-start">
+                                                    <div class="w-100">
+                                                        <div class="text-muted muted d-flex w-100 my-1 flex-wrap small">
+                                                        </div>
+                                                        <a href="https://classes.kisumupoly.ac.ke/course/view.php?id=3045" class="coursename mt-3 mb-0">
+
+
+                            <span id="favorite-icon-3045-8" data-region="favourite-icon" data-course-id="3045">
+                                <span class="text-primary hidden" data-region="is-favourite" aria-hidden="true">
+                                    <i class="icon fas fa-star fa-fw " aria-hidden="true" title="Starred course" aria-label="Starred course"></i>
+                                    <span class="sr-only">Course is starred</span>
+                                </span>
+                            </span>
+                                                            <span class="sr-only">
+                                    Course name
+                                </span>
+
+
+                                                            <span class="multiline">
+            RESEARCH METHODS
+        </span>
+                                                        </a>
+                                                    </div>
+
+
+
+                                                    <div class="dropdown dropdown-right">
+                                                        <button class="btn btn-secondary btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="icon fas fa-ellipsis-v fa-fw " aria-hidden="true" aria-label=""></i>
+                                                            <span class="sr-only">
+                        Actions for current course RESEARCH METHODS
+                    </span>
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a class="dropdown-item " href="#" data-action="add-favourite" data-course-id="3045" aria-controls="favorite-icon-3045-8">
+                                                                Star this course
+                                                                <div class="sr-only">
+                                                                    Star for RESEARCH METHODS
+                                                                </div>
+                                                            </a>
+                                                            <a class="dropdown-item hidden" href="#" data-action="remove-favourite" data-course-id="3045" aria-controls="favorite-icon-3045-8">
+                                                                Unstar this course
+                                                                <div class="sr-only">
+                                                                    Remove star for RESEARCH METHODS
+                                                                </div>
+                                                            </a>
+                                                            <a class="dropdown-item hidden" href="#" data-action="show-course" data-course-id="3045" aria-controls="favorite-icon-3045-8">
+                                                                Restore to view
+                                                                <div class="sr-only">
+                                                                    Restore RESEARCH METHODS to view
+                                                                </div>
+                                                            </a>
+                                                            <a class="dropdown-item " href="#" data-action="hide-course" data-course-id="3045" aria-controls="favorite-icon-3045-8">
+                                                                Remove from view
+                                                                <div class="sr-only">
+                                                                    Remove RESEARCH METHODS from view
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                            <div class="progress mt-2">
+                                                <div class="progress-bar bar" role="progressbar" aria-valuenow="0" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress-bar-text small">
+                                                <span class="sr-only">Course progress:</span>
+                                                <strong>0</strong>% complete
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div></div>
+                    <div class="mt-1">
+
+
+                        <div data-region="paging-control-container" class="d-flex">
+
+                            <nav id="paging-bar-1" class="hidden" data-region="paging-bar" data-ignore-control-while-loading="true" data-hide-control-on-single-page="true" data-active-page-number="1" data-items-per-page="[object Object]" aria-label="Pagination navigation" data-aria-label-components-pagination-item="pagedcontentnavigationitem, core" data-aria-label-components-pagination-active-item="pagedcontentnavigationactiveitem, core" data-last-page-number="1">
+
+                                <ul class="pagination shadow-none mb-0">
+
+
+                                    <li class="page-item disabled" data-region="page-item" data-control="previous" aria-disabled="true">
+
+                                        <a href="#" class="page-link" data-region="page-link" aria-label="Previous page">
+
+                                            <span class="icon-no-margin dir-rtl-hide" aria-hidden="true"><i class="icon fas fa-arrow-left fa-fw " aria-hidden="true" aria-label=""></i></span>
+                                            <span class="icon-no-margin dir-ltr-hide" aria-hidden="true"><i class="icon fas fa-arrow-right fa-fw " aria-hidden="true" aria-label=""></i></span>
+                                        </a>
+                                    </li>
+
+
+                                    <li class="page-item disabled" data-region="page-item" data-control="next" aria-disabled="true">
+
+                                        <a href="#" class="page-link" data-region="page-link" aria-label="Next page">
+
+                                            <span class="icon-no-margin dir-rtl-hide" aria-hidden="true"><i class="icon fas fa-arrow-right fa-fw " aria-hidden="true" aria-label=""></i></span>
+                                            <span class="icon-no-margin dir-ltr-hide" aria-hidden="true"><i class="icon fas fa-arrow-left fa-fw " aria-hidden="true" aria-label=""></i></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+        </div>
+        <div class="footer"></div>
+
+    </div>
+
+</div>
+</body>
+</html>

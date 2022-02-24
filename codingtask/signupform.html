@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <title>Signup DEtails</title>
     <link rel="stylesheet"  href="myforms/formassets/signup.css">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+
+
+
 </head>
 <body>
-<form>
+<form class="container border">
     <fieldset>
     <div class="form-title">
         <h5 class="text-center">Create Account</h5>
@@ -46,14 +54,89 @@
             <lable>I want to receive news letters</lable>
         </div>
     <div>
-        <input type="button" name="regester"    value="Regester">
+        <input type="button" name="register"    value="Register">
     </div>
     <p class="small"> I have and account</p>
     <div>
         <input type="button" name="login"   value="Login">
     </div>
     </fieldset>
+
 </form>
+
+<hr>
+
+
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Chromium Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+<!--                            <div class="row">-->
+<!--                                <div class="col-md-4">.col-md-4</div>-->
+<!--                                <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>-->
+<!--                            </div>-->
+<!--                            <div class="row">-->
+<!--                                <div class="col-md-3 ms-auto">.col-md-3 .ms-auto</div>-->
+<!--                                <div class="col-md-2 ms-auto">.col-md-2 .ms-auto</div>-->
+<!--                            </div>-->
+<!--                            <div class="row">-->
+<!--                                <div class="col-md-6 ms-auto">.col-md-6 .ms-auto</div>-->
+<!--                            </div>-->
+                            <div class="row">
+                                <div class="">
+                                    <div class="row">
+                                        <div class="col-8 col-sm-6">
+                                            Level 2: .col-8 .col-sm-6
+                                        </div>
+                                        <div class="col-4 col-sm-6 text-left">
+<!--                                            Level 2: .col-4 .col-sm-6-->
+                                            <div class="collapse" id="collapseExample">
+                                                <div class="card card-body">
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 
 </body>
 </html>

@@ -20,9 +20,7 @@ body {
   overflow-x: hidden;
 }
 
-body,
-input,
-button {
+body, input, button {
   font-family: 'Muli', sans-serif, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
   outline: none;
 }
