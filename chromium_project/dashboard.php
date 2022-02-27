@@ -1,14 +1,20 @@
 <?php
 session_start();
 
-//check if user has login
-if (!isset($_SESSION["loggedin"]) or $_SESSION["loggedin"] !== true){
-    header("location:index.php");
-
-    exit();
-}
+////check if user has login
+//if (!isset($_SESSION["loggedin"]) or $_SESSION["loggedin"] !== true){
+//    header("location:index.php");
+//
+//    exit();
+//}
 
 include "header.php";
+
+    echo $_SESSION ['firstName'];
+    echo $_SESSION ['lastname'];
+    echo $_SESSION ['email'];
+    echo $_SESSION ['firstgender'];
+    echO "<img scr=' ".$_SESSION ['picture']."'>";
 ?>
 
 

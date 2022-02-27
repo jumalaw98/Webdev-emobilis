@@ -17,5 +17,52 @@ $gClient ->addScope("https://www.googleapis.com/auth/plus.login https://www.goog
 // add to index php button
 $login_url = $gClient -> createAuthUrl();
 
+session_start();
+if (isset($_GET["code"])){
 
-https://developers.facebook.com/
+    //fetch th valid authentication token
+    $token = $gClient -> fetchAccessTokenWithAuthCode($_GET["code"]);
+
+    if (!isset($token["error"])){
+
+        $gClient -> setAccessToken($token['access_token']);
+
+        //store the session in a token
+        $_SESSION['access_token'] = $token ['access_token'];
+        //get user data from g.services
+
+        $gServices = new Google_Service_Oauth2($gClient);
+        $data = $gServices -> userinfo ->get();
+
+
+        if (!empty($data["given_name"])){
+
+            $firstname = $data['given_name'];
+            $_SESSION ['firstName']= $firstname;
+
+        }
+        if (!empty($data['family_name'])){
+            $lastname = $data['family_name'];
+            $_SESSION ['lastname'] = $lastname;
+        }
+
+        if (!empty($data['email'])){
+            $email =$data['email'];
+            $_SESSION['email']=$email;
+        }
+        if (!empty($data['gender'])){
+            $gender =$data['gender'];
+            $_SESSION['gender']=$gender;
+        }
+        if (!empty($data['picture'])){
+            $picture =$data['picture'];
+            $_SESSION['picture']=$picture;
+        }
+
+        session_start();
+        $_SESSION["loggedin"]= true;
+        $_SESSION["username"]= "$firstname .$lastname";
+    }
+
+
+}

@@ -145,6 +145,9 @@ $userName = $_SESSION["username"];
                                     </li>
                                     <li class="nav-item">
                                         <a href="#">
+                                           <?php echO "<img scr=' ".$_SESSION ['picture']."'>"; ?>
+
+                                             
                                             <img class="rounded-circle" src="images/female.svg" alt="Loading" height="50" width="50">
                                         </a>
                                     </li>

@@ -31,7 +31,7 @@ include "handle_glogin.php";
                     <div class="text-center">
                         <h4 class="grey">Happy to See You Back!</h4>
                     </div>
-                    <form action="handlelogin.php" method="post">
+                    <form action="handle_login.php" method="post">
                         <div class="row mb-3">
                             <div>
                             <input class="form-control rounded-pill" type="email" name="emailAddress" placeholder="Email Address">

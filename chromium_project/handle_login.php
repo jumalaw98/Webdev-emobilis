@@ -2,6 +2,7 @@
 
 include "config.php";
 
+
 if (isset($_POST["login"])){
     $userEmail = $_POST["emailAddress"];
     $userPassword = $_POST["password"];
